@@ -1,0 +1,94 @@
+<html>
+    <title>Western Meal Resraurant</title>
+    <link rel="stylesheet" href="code/bootstrap.min.css">
+      <src="code/jquery.min.js"></script>
+      <script src="code/popper.min.js"></script>
+      <script src="code/bootstrap.min.js"></script>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="food.html">Food Menu</a></li>
+                      <li><a class="dropdown-item" href="beverage.html">Beverage Menu</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="special.html">Special Menu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <h4>Check here to contact us!</h4>
+          <p>Email adress for our updates</p>
+          </p><input type="text" placeholder="Enter Email">
+          <button type="submit" class="btn btn-success">Submit</button>
+                  <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="
+        #step">
+         Book a Table
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="step" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">My Reservation!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h5>Name</h5>
+                  <input type="text" placeholder="Name">
+                <h5>Email or Phone</h5>
+                  <input type="text;number" placeholder="Email or Phone">
+                <h5>Date</h5>
+                  <input type="date" >
+                <h5>Time</h5>
+                  <input type="time" placeholder="time">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#step1">
+                 Book 
+                </button>
+                <div class="modal fade" id="step1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">My Reservation!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5>Thank for your reservation!</h5>
+                        <p>We will send your reservation table to your mail</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#step1">
+                          Comfirm 
+                         </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </body>
+</html>
